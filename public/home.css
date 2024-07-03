@@ -1,0 +1,151 @@
+/* 접근성 관련 스타일 */
+.accessibility {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    width: 100%;
+}
+
+.accessibility a {
+    display: block;
+    overflow: hidden;
+    z-index: 3000;
+    width: 1px;
+    height: 1px;
+    margin: 0 -1px -1px 0;
+    font-size: 0;
+    text-align: center;
+    line-height: 0;
+}
+
+#accessibility a:active,
+#accessibility a:hover,
+.accessibility a:focus {
+    width: auto;
+    height: 30px;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+/* 기본 스타일 */
+body {
+    background-color: #531f31;
+    font-family: "s-coredream", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Gulim", "굴림", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 50px;
+}
+
+
+/* 홈 페이지 스타일 */
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    max-width: 150px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+.sidebar .menu ul {
+    padding: 0;
+}
+
+.sidebar .menu ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    
+    
+}
+
+.sidebar .menu ul li:hover {
+    background-color: #333;
+}
+
+.sidebar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+.sidebar .menu li img{
+    max-width: 18px;
+    margin-right: 9px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.main_content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post_header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+}
+
+.user_info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.post_image img {
+    width: 100%;
+}
+
+.post_footer {
+    padding: 10px;
+}

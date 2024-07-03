@@ -1,0 +1,13 @@
+npm init -y는 "package.json" 파일을 만들어 주는데 => 왜 필요하냐면 서버를 만들기 위해 필요한 기능을 라이브러리로 추가할 때 추가된 라이브러리 목록을 나열함
+
+express도 라이브러리다! express는 서버 만들기 편한 라이브러리다!
+
+라이브러리란? 코딩을 도와주는 미리 짜놓은 코드!
+
+npm install express를 하게 되면 내 프로젝트에 'node_modules' 파일이 추가된다. express도 안에 있지만 그에 필요한 다른 라이브러리도 추가된다.
+
+npm는 node.js 설치하면 따라온다. 
+
+재시작 귀찮으면 node로 실행하지 말고 nodemon으로 실행해라
+
+응답으로 파일을 보내고 싶으면 응답.sendfile(__dirname + '/index')
