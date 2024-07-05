@@ -46,6 +46,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 /* 로그인 및 회원가입 페이지 스타일 */
@@ -61,9 +62,7 @@ body {
     box-shadow: 0 53px 49px 21px rgba(0, 0, 0, 0.1);
 }
 
-.form_header {
-    text-align: center;
-}
+
 
 .login_form h2,
 .signup_form h2 {

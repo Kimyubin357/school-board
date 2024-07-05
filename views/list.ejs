@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+    <%- include('nav.ejs') %>
+    <div class="main_content">
+        
+        <div class="posts">
+            <!-- 게시물 목록 -->
+            <div class="post">
+                <% for (let i = 0; i < 글목록.length; i++){ %>
+                <div class="post_header">
+                    <div class="depart"><!--부서-->
+                        <span><%= 글목록[0].name %></span><!--부서명-->
+                        <span><%= 글목록[0].title %></span><!--부서명-->
+                        <span>writetime</span><!--작성시간-->
+                    </div>
+                    <img src="file_down" alt="down"><!--첨부파일 다운로드 받을 버튼-->
+                </div>
+                <div class="post_image">
+                    <img src="post_image" alt="Post Image">
+                </div>
+                <!--좋아요, 댓글 버튼-->
+                <div class="post_footer">
+                    <span><%= 글목록[0].detail %></span><!--디테일한 설명-->
+                </div>
+                <% } %>
+            </div>
+            <!-- 더 많은 게시물들 -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* 접근성 관련 스타일 */
+.accessibility {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    width: 100%;
+}
+
+.accessibility a {
+    display: block;
+    overflow: hidden;
+    z-index: 3000;
+    width: 1px;
+    height: 1px;
+    margin: 0 -1px -1px 0;
+    font-size: 0;
+    text-align: center;
+    line-height: 0;
+}
+
+#accessibility a:active,
+#accessibility a:hover,
+.accessibility a:focus {
+    width: auto;
+    height: 30px;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    line-height: 16px;
+}
+
+/* 기본 스타일 */
+body {
+    background-color: #531f31;
+    font-family: "s-coredream", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Gulim", "굴림", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+/* 폼 스타일 */
+.form-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.form-box h4 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-box input[type="text"],
+.form-box input[type="datetime-local"],
+.form-box input[type="file"],
+.form-box textarea,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-box textarea {
+    resize: vertical;
+}
+
+.form-box button[type="submit"] {
+    background-color: #531f31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-box button[type="submit"]:hover {
+    background-color: #42162a;
+}
+
+/* 접근성 링크 스타일 */
+.accessibility a {
+    display: block;
+    overflow: hidden;
+    z-index: 3000;
+    width: 1px;
+    height: 1px;
+    margin: 0 -1px -1px 0;
+    font-size: 0;
+    text-align: center;
+    line-height: 0;
+}
+
+#accessibility a:active,
+#accessibility a:hover,
+.accessibility a:focus {
+    width: auto;
+    height: 30px;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    line-height: 16px;
+}

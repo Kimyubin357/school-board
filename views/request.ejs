@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지글 신청</title>
+    <link rel="stylesheet" href="request.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <%- include('nav.ejs') %>
+    <form class="form-box" action="/add" method="POST" enctype="multipart/form-data">
+        <h4>공지글 신청</h4>
+        
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="timestamp">작성시간:</label>
+        <input type="datetime-local" id="timestamp" name="timestamp" required>
+        
+        <label for="category">카테고리:</label>
+        <select id="category" name="category" required>
+            <option value="일반">일반</option>
+            <option value="학사/장학">학사/장학</option>
+            <option value="입학/등록">입학/등록</option>
+            <option value="채용/인사">채용/인사</option>
+            <option value="행사/세미나">행사/세미나</option>
+            <option value="모집/공모">모집/공모</option>
+        </select>
+        
+        <label for="image">이미지 첨부:</label>
+        <input type="file" id="image" name="image" accept="image/*" multiple>
+        
+        <label for="attachments">첨부 파일:</label>
+        <input type="file" id="attachments" name="attachments" multiple>
+        
+        <label for="content">내용:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+        
+        <button type="submit">전송</button>
+    </form>
+</body>
+</html>
